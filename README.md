@@ -12,7 +12,7 @@ You have supply a csv file as the input in the following format:
 
 - runs like this:
 
-> ./mileage example.csv
+> ./mileage sample.csv
 
 Why in COBOL?
 

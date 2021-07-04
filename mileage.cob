@@ -62,7 +62,7 @@
                 EVALUATE csv_file_name 
                     WHEN SPACE
                         DISPLAY "no csv file supplied. Will stick to default"
-                        MOVE "example.csv" TO csv_file_name
+                        MOVE "sample.csv" TO csv_file_name
                     WHEN "--usage"
                         DISPLAY "mileage <path_to_csv_file>"
                         STOP RUN
