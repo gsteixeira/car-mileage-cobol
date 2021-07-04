@@ -73,14 +73,17 @@
             STOP RUN.
             
             compute_mileage.
-                PERFORM VARYING i FROM 2 BY 1 UNTIL i >= max_records OR odometer (i) = 0
+                PERFORM VARYING i FROM 2 BY 1 UNTIL
+                        odometer (i) = 0 OR i >= max_records
                     MOVE fuel (i) TO fuel_spent
                     IF topup (i - 1) = 1 THEN
                         MOVE odometer (i - 1) TO last_odo
                     ELSE
                         COMPUTE aux = i - 1
-                        PERFORM VARYING j FROM aux BY -1 UNTIL topup (j) = 1 or j = 1
-                            SUBTRACT odometer (i) FROM odometer (j) GIVING distance
+                        PERFORM VARYING j FROM aux BY -1 UNTIL
+                                topup (j) = 1 or j = 1
+                            SUBTRACT odometer (i) FROM odometer (j) 
+                                GIVING distance
                             ADD fuel(j) TO fuel_spent
                             *>DISPLAY "b" fuel(j) fuel_spent distance
                         END-PERFORM
@@ -89,12 +92,13 @@
                     DIVIDE distance BY fuel_spent GIVING mileage (i)
                     MOVE distance TO dist (i)
                     MOVE fuel_spent TO spent (i)
-                    *>DISPLAY "distance " distance " fuel " fuel_spent " mileage " mileage (i)
+                    *>DISPLAY "d " distance " f " fuel_spent " m " mileage (i)
                 END-PERFORM.
 
             show_results.
                 DISPLAY "id odometer fill  topup dist. fuel mileage"
-                PERFORM VARYING i from 1 BY 1 UNTIL odometer (i) = 0 OR i >= max_records
+                PERFORM VARYING i from 1 BY 1 UNTIL
+                        odometer (i) = 0 OR i >= max_records
                     DISPLAY i SPACE
                             odometer (i) SPACE SPACE SPACE SPACE
                             fuel (i) SPACE
