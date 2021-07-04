@@ -15,14 +15,14 @@ You have supply a csv file as the input in the following format:
 
 > ./mileage sample.csv
 
-*Why in COBOL?
+Why in COBOL?
 
 Because it's so fun! :)
 
-*My car is spending too much gas!
+My car is spending too much gas!
 
 Check the pointers, tune them up. Clean the carburetors, tune them up. Tune the valves. Check spark plugs and cables. Use everything in standard setting: gicleurs, injectors, openings. Please refer to the user manual. A clean, well tuned carburetor and pointer runs better than any electronic garbage! 8)
 
-*But my car is fuel injected!
+But my car is fuel injected!
 
 Ok, you ride a plastic toy!! Sell it, buy an electric or a classic! Carbs runs better.
