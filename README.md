@@ -24,22 +24,17 @@ Because it's so fun! :)
 
 - My car is spending too much gas!
 
-Check the pointers, tune them up. Clean the carburetors, tune them up. Tune the valves. Check spark plugs and cables. Use everything in standard setting: gicleurs, injectors, openings. Please refer to the user manual. A clean, well tuned carburetor and pointer runs better than any electronic garbage! 8)
+Check the pointers, tune them up. Clean the carburetors, tune them up. Tune the valves. Check spark plugs and cables. Use everything in standard setting: jets, injectors, openings. Please refer to the user manual. A clean, well tuned carburetor and pointer spark system runs better than any electronic garbage! 8)
 
 
-- But my car is fuel injected..
-
-Ok, so you ride a plastic toy... Sell it, buy an electric or a classic! Carbs runs better.
-
-
-- Carburetors and pointers?! This is something from the past..
+- Carburetors and pointers?! Modern cars don't have that.
 
 So why are you messing around with COBOL?
 
 
 - But fossil fuels are bad!!!
 
-You are indeed RIGHT! And that's why I made this software. Now you know how much you spend on fuel. By the way... COBOL is so good in doing calculations, and so fun, I also added calculations on CO2 released to the atmosphere. So now there is a column for CO2 released and another for CO2 per km.
+You are totally RIGHT! And that's why I made this software. Now you know how much you spend on fuel. By the way... COBOL is so good in doing calculations, and so fun, I also added calculations on CO2 released to the atmosphere. So now there is a column for CO2 released and another for CO2 per km.
 
 
 - The CO2 data makes me feel bad, what can I do to help?

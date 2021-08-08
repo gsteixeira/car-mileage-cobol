@@ -19,7 +19,7 @@
         *>  The csv file must have the following format:
         *>      odometer_read;gas_quantity;is_top_up?(0 or 1)
         *> 
-        *> compiles like this:  cobc -x --free mileage.cob
+        *> compiles like this:  cobc -x --free carmileage.cob
         *> runs like this:      ./mileage path_to_data_file.csv
         *>
         IDENTIFICATION DIVISION.
@@ -121,7 +121,7 @@
                 END-PERFORM.
 
             show_results.
-                DISPLAY "id odometer fill  kgCO2  trees kgco2/km mileage  "
+                DISPLAY "id odometer fuel  kgCO2  trees kgco2/km mileage  "
                 PERFORM VARYING i from 1 BY 1 UNTIL odometer (i) = 0 
                                                     OR i >= max_records
                     DISPLAY i SPACE
